@@ -5,9 +5,12 @@ redux mantiene el estado de la aplicación previsible : todo el estado unificado
 dentro de un reducer no se pueden mutar sus argumentos, hacer llamadas tipo api ni llamar funciones predeterminadas javascript, estas acciones se ejecutan fuera del reducer y ejecutan dispatch que generan acciones que modifican el estado y a traves de un subscribe el store lanza funciones de renderización.
     
    • para agregar datos al state:
+   
     	push agrega un elemento al state osea viola el principio de no modificar el estado inicial
-    	concat crea un nuevo array con el estado agregandole el nuevo elemento
+    	concat crea un nuevo array con el estado agregandole el nuevo elemento.
+        
    • para eliminar datos del state:
+   
     	utilizamos filter que crea un nuevo array con el estado anterior menos el elemento a borrar
      
 Fetch axios < (efecto externo al renderizar) - lanza un dispatch
