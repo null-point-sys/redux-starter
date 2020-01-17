@@ -23,7 +23,7 @@ Recursos paralelos para afectación del tiempo de ejecución del navegador:
 
 • redux <> (efecto transversal de unificación y almacenamiento del state en localstorage a través de un unico subscribe)
 
-• JWT : capa de verificación de identidad
+• JWT : capa de generación de identidad
 
 <img src="https://user-images.githubusercontent.com/25323947/72638943-8c1bc680-3932-11ea-9233-dc022986c8d5.png">
 
