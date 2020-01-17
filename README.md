@@ -21,6 +21,8 @@ Recursos paralelos para afectación del tiempo de ejecución del navegador:
 
 • react actions < (efecto interno durante tiempo de ejecución) - lanza un dispatch en la ejecución de botones
 
+• Bootstrap : para generar los estilos en inputs y listados
+
 • redux <> (efecto transversal de unificación y almacenamiento del state en localstorage a través de un unico subscribe)
 
 • JWT : capa de generación de identidad
