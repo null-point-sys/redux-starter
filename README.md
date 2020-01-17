@@ -15,10 +15,13 @@ dentro de un reducer no se pueden mutar sus argumentos, hacer llamadas tipo api 
 
 Recursos paralelos para afectación del tiempo de ejecución del navegador:
 
-Fetch axios < (efecto externo al renderizar) - lanza un dispatch
-socket.io < (efecto externo durante tiempo de ejecución) - lanza un dispatch
-react actions < (efecto interno durante tiempo de ejecución) - lanza un dispatch en la ejecución de botones
-redux • (efecto transversal de unificación y almacenamiento del state en localstorage a través de un unico subscribe) 
+• Fetch axios < (efecto externo al renderizar) - lanza un dispatch
+
+• socket.io < (efecto externo durante tiempo de ejecución) - lanza un dispatch
+
+• react actions < (efecto interno durante tiempo de ejecución) - lanza un dispatch en la ejecución de botones
+
+• redux • (efecto transversal de unificación y almacenamiento del state en localstorage a través de un unico subscribe) 
 
 <img src="https://user-images.githubusercontent.com/25323947/72638943-8c1bc680-3932-11ea-9233-dc022986c8d5.png">
 
