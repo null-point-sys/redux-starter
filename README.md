@@ -20,4 +20,6 @@ socket.io < (efecto externo durante tiempo de ejecución) - lanza un dispatch
 react actions < (efecto interno durante tiempo de ejecución) - lanza un dispatch en la ejecución de botones
 redux • (efecto transversal de unificación y almacenamiento del state en localstorage a través de un unico subscribe) 
 
+<a href="https://user-images.githubusercontent.com/25323947/72638943-8c1bc680-3932-11ea-9233-dc022986c8d5.png">
+
   
