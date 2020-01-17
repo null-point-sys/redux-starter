@@ -34,7 +34,7 @@
 		  }
 		}
 		var store = Redux.createStore(reducer_favoriteColors);
-        store.subscribe(render); // listener para cada que cambie el estado
+        	store.subscribe(render); // listener para cada que cambie el estado
 		function render() {
 		  console.log(store.getState()); // cuando cambie el estado a través de un dispatch la función render ejecuta un console log, alert, modificación de la interfase, api call, socket io event, etc.
 		}		
