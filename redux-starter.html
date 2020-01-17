@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Colors!</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.js"></script>
+  </head>
+  <body>
+    <script>
+		function action_addColor(value) {
+		  return {
+			type: "ADD",
+			color: value
+		  }
+		}
+		function action_removeColor(value) {
+		  return {
+			type: "REMOVE",
+			color: value
+		  }
+		}
+		function reducer_favoriteColors(state, action) {
+		  if (state === undefined) {
+			state = [];
+		  }
+		 
+		  if (action.type === "ADD") {
+			return state.concat(action.color);
+		  } else if (action.type === "REMOVE") {
+			return state.filter(function(item) {
+			  return item !== action.color;
+			});
+		  } else {
+			return state;
+		  }
+		}
+		var store = Redux.createStore(reducer_favoriteColors);
+        store.subscribe(render); // listener para cada que cambie el estado
+		function render() {
+		  console.log(store.getState()); // cuando cambie el estado a través de un dispatch la función render ejecuta un console log, alert, modificación de la interfase, api call, socket io event, etc.
+		}		
+		store.dispatch(action_addColor("orange")); // cada dispatch envía una action al reducer y define el nuevo estado.
+		store.dispatch(action_removeColor("gray"));
+		console.log(store.getState()); // para ver el nuevo estado
+    </script>
+  </body>
+</html>
