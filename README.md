@@ -11,3 +11,8 @@
     	concat crea un nuevo array con el estado agregandole el nuevo elemento
     • para eliminar datos del state:
     	utilizamos filter que crea un nuevo array con el estado anterior menos el elemento a borrar
+     
+  Fetch axios < (efecto externo al renderizar) - lanza un dispatch
+  socket.io < (efecto externo durante tiempo de ejecución) - lanza un dispatch
+  react actions < (efecto interno durante tiempo de ejecución) - lanza un dispatch en la ejecución de botones
+  redux • (efecto transversal de unificación y almacenamiento del state en localstorage) 
